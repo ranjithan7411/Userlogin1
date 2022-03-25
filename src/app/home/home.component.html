@@ -1,0 +1,31 @@
+<body><h1>  Shop by Category : </h1>
+<div class="categories">
+    <div *ngFor="let item of popItems" id="cateItems" >
+        <button (click)="onSelect(item)" id="cateButton"><span>
+            <img src="{{item.imgUrl}}" alt="">
+            <h2 id="itemName">{{item.names}}</h2></span>
+        </button>
+        
+    </div>
+    <br>
+</div>
+
+<div class="filteredCategories">
+    <div *ngFor="let item of filteredItems"><span>
+        <div class="items">
+        <img src="{{item.itemImg}}" alt=""> 
+        <div id="foodContent">
+            <div *ngFor="let star of stars">
+               <!-- <img src="{{star.starImg}}" alt="" >-->
+            </div>
+            <p class="name">{{item.itemName}}</p>
+            <p>{{item.itemQty}}</p>
+            <p>{{item.rate}}</p>
+        </div>
+        <button (click)="add(item)" class="addtocart">Add to cart</button>
+        </div>
+    </span>
+    </div>
+</div>
+
+</body>

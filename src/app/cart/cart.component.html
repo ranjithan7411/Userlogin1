@@ -1,0 +1,34 @@
+<section>
+    
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h1 class="cart-title">My Cart</h1>
+        </div>
+        <div class="center">
+            <img src="https://srikakulamads.com/wp-content/uploads/2020/12/What-is-online-grocery-shopping.png" alt="">
+            <h3>Your cart is empty</h3>
+            <h5>Add item to it now</h5>
+            <button class="btmPrimary">Shop now</button>
+        </div>
+    </div>
+  
+    
+</ng-container>
+    <ng-container *ngIf="true" >
+        <div>
+            <button id="placeOrder">Place Order</button>
+        </div>
+    <div class="cartItemContainer">
+    <div *ngFor="let i of cartItems; let j=index;" >
+        <div class="cartItems">
+        <img  src="{{i.itemImg}}" alt="">
+        <p>{{i.itemName}}</p>
+        <p>{{i.rate}}</p>
+        <button  class="delete" (click)="delete(j)">remove</button> <br>
+        </div>
+    </div>
+   
+</div>
+    </ng-container>
+</section>

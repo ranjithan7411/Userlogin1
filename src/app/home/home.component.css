@@ -1,0 +1,70 @@
+body{
+   
+    width:98vw;
+    height: auto;
+}
+.categories{
+    font-size: 20px;
+    display: flex;
+    margin: 50px;
+   
+}
+h1{
+    margin-top: 0px;
+    
+}
+.items{
+    width: 200px;
+    height: 284px;
+    -border: 2px solid black ;
+    margin: 10px;
+    border: 1px solid pink;
+}
+.items img{
+    width:200px;
+    height: 150px;
+    -position: absolute;
+    margin-left:0px;
+}
+.items img:hover{
+    transform:  translate(40);
+}
+.addtocart{
+    
+    width: auto;
+    height:25px;
+    background-color:rgb(73, 73, 245);
+    color: aliceblue;
+}
+p{
+    font-size: large;  
+    line-height: 10px;
+}
+
+
+.categories button{
+    width:130px;
+    height: 100px;
+    margin: 7px;
+    border-radius: 10px;
+    background-color: rgb(202, 245, 245);
+    
+  
+}
+#cateItems{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+.filteredCategories{
+    margin-left: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.filteredCategories #foodContent{
+    margin-right: 100px;
+}
+
+
+

@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    width:100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 47, 255));
+    margin:-18px;
+    text-align: center;
+}
+div{
+    position:absolute;
+    margin-top:180px;
+    margin-left: 43%;
+}
+button{
+    margin-top: 20px;
+    width:150px;
+    height: 43px;
+    font-size:large;
+    color:white;
+    background-color: rgb(228, 4, 127);
+}
+
+
+

@@ -1,0 +1,75 @@
+<!--    <ng-container *ngIf="true">
+    <div class="card-table">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr. no</th>
+                            <th>Product name</th>
+                            <th>Product Image</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Total Amt</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Apple</td>
+                            <td>Some Image</td>
+                            <td>30</td>
+                            <td>2</td>
+                            <td>60</td>
+                            <td>
+                                <button class="btn btn-danger">delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>-->
+
+<section>
+    
+    <ng-container *ngIf="false">
+        <div class="container">
+            <div class="card">
+                <h1 class="cart-title">My Cart</h1>
+            </div>
+            <div class="center">
+                <img src="https://srikakulamads.com/wp-content/uploads/2020/12/What-is-online-grocery-shopping.png" alt="">
+                <h3>Your cart is empty</h3>
+                <h5>Add item to it now</h5>
+                <button class="btmPrimary">Shop now</button>
+            </div>
+            
+        </div>
+      
+        
+    </ng-container>
+        <ng-container *ngIf="true" >
+        <div class="cartItemContainer">
+        <div *ngFor="let i of cartItems; let j=index;" >
+            <div class="cartItems">
+            <img  src="{{i.itemImg}}" alt="">
+            <p>{{i.itemName}}</p>
+            <p>{{i.rate}}</p>
+            <!--<button class="delete" (click)="delete(j)">remove</button> <br>-->
+            </div>
+        </div>
+        <div *ngIf="btnVisible">
+            <button (click)="changeView()"  id="placeOrder">Place Order</button>
+        </div>
+    </div>
+        </ng-container>
+    
+    
+    
+    
+    
+    </section>
+    

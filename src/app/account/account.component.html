@@ -1,0 +1,45 @@
+<body><section>
+    <div id="container">
+        <h1>Create Account</h1>
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+            <div formGroupName="userData">
+                <div class="form-group">
+                    <input type="text" id="name" class="form-control" formControlName="name" placeholder="Enter Username/Email"><br>
+                    <span *ngIf="!signupForm.get('userData.name').valid && signupForm.get('userData.name').touched">
+                        Please enter a valid name
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="phonenumber" class="form-control" formControlName="phonenumber" placeholder="Enter your phone number"><br>
+                    <span *ngIf="!signupForm.get('userData.phonenumber').valid && signupForm.get('userData.phonenumber').touched">
+                        Please enter a valid phonenumber
+                    </span>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" class="form-control" formControlName="email" placeholder="Enter your email"><br>
+                    <span *ngIf="!signupForm.get('userData.email').valid && signupForm.get('userData.email').touched">
+                        Please enter a valid email
+                    </span>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="password" class="form-control" formControlName="password" placeholder="Enter the password"><br>
+                    <span *ngIf="!signupForm.get('userData.password').valid && signupForm.get('userData.password').touched">
+                        Please enter a valid password
+                    </span>
+                </div>
+                
+                <div class="button">
+                    <button class="btn" [routerLink]="['/accountsuccess-page']">Submit</button>
+                    <br>
+                </div>
+              
+                
+            </div>
+        </form>
+    </div>
+</section>
+<img *ngIf="imgVisible" src="">
+</body> 
+

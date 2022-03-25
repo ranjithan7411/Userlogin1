@@ -1,0 +1,32 @@
+*{
+    text-align:center;
+    
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1JiGokrCYV0nPTz7Ac3EIY3D2MEcpItAtwA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: antiquewhite;
+    padding: 40px;
+}
+#container{
+    line-height:30px;
+}
+
+.lbl{
+    font-size:large;
+    font-weight: 10%;
+}
+#email, #phonenumber{
+    width:200px;
+    height:50px;
+    font-size: 15px;
+}
+#button{
+    width: 180px;
+    height:40px;
+    font-size: 20px;
+}
+.lines{
+    font-size: 21px;
+}
